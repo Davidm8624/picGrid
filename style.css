@@ -1,7 +1,142 @@
+@media only screen and (min-device-width: 400px) {
+
+
+    body{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        background-color: rgb(143, 118, 56);
+        text-align: center;
+        
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .container {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        'logo logo logo logo logo'
+        'logo logo logo logo logo'
+        'logo logo logo logo logo'
+        'facebook mask mardi-gras mardi-gras every-face'
+        'twitter mask mardi-gras mardi-gras every-face'
+        'birthday birthday serious all-ages wigs'
+        'birthday birthday serious all-ages wigs'
+        'outfits sale sale candy hats'
+        'outfits xmas classic classic shipping'
+        'props xmas holloween1 holloween2 oh-my';
+        position: relative;
+    
+    }
+    
+    
+    
+    .cell-a{
+        grid-area: facebook;
+    }
+    
+    .cell-b{
+        grid-area: twitter;
+    }
+    
+    .cell-c{
+        grid-area: every-face;
+    }
+    
+    .cell-d{
+        grid-area: birthday;
+    }
+    
+    .cell-e{
+        grid-area: serious;
+    }
+    
+    .cell-f{
+        grid-area: all-ages;
+    }
+    
+    .cell-g{
+        grid-area: wigs;
+    }
+    
+    .cell-h{
+        grid-area: outfits;
+    }
+    
+    .cell-i{
+        grid-area: sale;
+    }
+    
+    .cell-j{
+        grid-area: candy;
+    }
+    
+    .cell-k{
+        grid-area: hats;
+    }
+    
+    .cell-l{
+        grid-area: props;
+    }
+    
+    .cell-m{
+        grid-area: xmas;
+    }
+    
+    .cell-n{
+        grid-area: classic;
+    }
+    
+    .cell-o{
+        grid-area: shipping;
+    }
+    
+    .cell-p{
+        grid-area: holloween1;
+    }
+    
+    .cell-q{
+        grid-area: holloween2;
+    }
+    
+    .cell-r{
+        grid-area: oh-my;
+    }
+    .cell-s{
+        grid-area: mask;
+    }
+    
+    .cell-t{
+        grid-area: mardi-gras;
+    }
+    .cell-u{
+        grid-area: logo;
+    }
+
+
+}
+
+@media only screen and (max-device-width: 400px) {
+    body{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 nav {
+    
     background-color: rgb(143, 118, 56);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    word-spacing: 10px;
+    width: auto;
+    text-align: center;
 }
 
 a{
@@ -14,16 +149,19 @@ a{
     grid-template-columns: 250px 250px 250px 250px 250px;
     grid-template-rows: auto;
     grid-template-areas:
-    'logo logo logo logo facebook'
-    'logo logo logo logo twitter'
-    'logo logo logo logo every-face'
+    'logo logo logo logo logo'
+    'logo logo logo logo logo'
+    'logo logo logo logo logo'
+    'facebook mask mardi-gras mardi-gras every-face'
+    'twitter mask mardi-gras mardi-gras every-face'
     'birthday birthday serious all-ages wigs'
     'birthday birthday serious all-ages wigs'
     'outfits sale sale candy hats'
     'outfits xmas classic classic shipping'
     'props xmas holloween1 holloween2 oh-my'
-    'mask mardi-gras mardi-gras . contacto-info';
-    position: absolute;
+    
+    ;
+    position: relative;
 
 }
 
@@ -109,13 +247,14 @@ a{
 }
 .cell-u{
     grid-area: logo;
-}
-.cell-v{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: darkorange;
-    grid-area: contact-info;
+}}
+#footer {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-}
+    bottom:0;    
+    width:100%;
+    height:60px;
+    position: fixed;
+    background-color: rgb(143, 118, 56) ;   /* Height of the footer */
+ }
+
+
